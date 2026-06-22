@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="彭子豪（Zihao Peng），北京师范大学博士研究生，研究方向包括联邦学习、参数高效微调、隐私保护机器学习与云边协同智能。" name="description"/>
+<meta content="Zihao Peng" name="author"/>
+<title>彭子豪 | Zihao Peng</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+</head>
+<body>
+<main class="resume">
+<header class="resume-header" id="top">
+<div class="identity">
+<h1><span class="zh">彭子豪</span><span class="en">Zihao Peng</span></h1>
+<p class="position zh">北京师范大学 · 智能科学与技术博士研究生</p>
+<p class="position en">Ph.D. Student in Intelligent Science and Technology, Beijing Normal University</p>
+<p class="contact">
+<a href="mailto:pzh_99@163.com">pzh_99@163.com</a>
+<span>·</span>
+<a href="https://github.com/Pluszzh" rel="noreferrer" target="_blank">GitHub</a>
+<span>·</span>
+<a href="https://scholar.google.com/citations?user=jrS5haIAAAAJ&amp;hl=en" rel="noreferrer" target="_blank">Google Scholar</a>
+</p>
+<p class="research-line zh">联邦学习 · 参数高效微调 · 隐私保护机器学习 · 云边协同智能</p>
+<p class="research-line en">Federated Learning · Parameter-Efficient Fine-Tuning · Privacy-Preserving ML · Edge–Cloud Intelligence</p>
+</div>
+<img alt="彭子豪证件照" class="portrait" height="176" src="assets/profile.jpg" width="132"/>
+</header>
+<div aria-label="Page controls" class="toolbar">
+<nav>
+<a class="zh" href="#education">教育背景</a><a class="en" href="#education-en">Education</a>
+<a class="zh" href="#research">研究方向</a><a class="en" href="#research-en">Research</a>
+<a class="zh" href="#projects">项目经历</a><a class="en" href="#projects-en">Projects</a>
+<a class="zh" href="#publications">学术成果</a><a class="en" href="#publications-en">Publications</a>
+<a class="zh" href="#patents">发明专利</a><a class="en" href="#patents-en">Patents</a>
+<a class="zh" href="#awards">荣誉获奖</a><a class="en" href="#awards-en">Awards</a>
+</nav>
+<button aria-label="Switch language" id="lang-toggle" type="button">EN</button>
+</div>
+<div class="zh">
+<section id="education">
+<h2>教育背景</h2>
+<div class="entry compact">
+<div class="entry-head"><strong>博士生　北京师范大学　智能科学与技术</strong><span>2024.09—至今</span></div>
+<p>导师：王田教授</p>
+</div>
+<div class="entry compact">
+<div class="entry-head"><strong>硕士　南昌大学　计算机技术</strong><span>2021.09—2024.06</span></div>
+<p>导师：饶泓教授、陈盛博教授</p>
+</div>
+</section>
+<section id="research">
+<h2>主要研究课题 / 研究方向</h2>
+<div class="entry">
+<h3>联邦学习中噪声干扰隐私保护的性能优化</h3>
+<p>研究加噪隐私保护对联邦学习性能与收敛行为的影响，通过动态调节客户端和服务端学习率，改善凸与非凸场景下的全局收敛性能。</p>
+</div>
+<div class="entry">
+<h3>针对数据异构的联邦生成模型性能优化</h3>
+<p>面向异构数据下联邦扩散模型生成质量下降的问题，研究全局数据分布感知的联邦修正方法，并结合实验与收敛性分析进行验证。</p>
+</div>
+<div class="entry">
+<h3>联邦大模型高效微调方法研究</h3>
+<p>研究联邦学习场景下基于 LoRA 的参数高效微调方法，重点关注异构 LoRA 聚合、个性化适配与严格收敛性保障。</p>
+</div>
+</section>
+<section id="projects">
+<h2>项目经历</h2>
+<article class="entry">
+<div class="entry-head"><h3>面向真实场景的多模态交通大模型研发与应用示范</h3><span>2025.11—至今</span></div>
+<p class="meta">广东省重点领域研发计划项目，4800 万 · 主要参与人</p>
+<ul>
+<li>参与交通行业多模态大模型总体方案与模块划分，支撑智能驾驶与交通事故处置两类核心场景。</li>
+<li>设计跨域联邦协同训练与增量微调流程，结合云边端协同、多级联邦学习与本地差分隐私。</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>基于大模型的智能标书稽查助手</h3><span>2025.08—2026.01</span></div>
+<p class="meta">中国电信横向课题，96 万 · 主要负责人</p>
+<ul>
+<li>设计 Map-Reduce 式超长文档稽查流程、多轮滑动窗口切片与父子级重校验机制。</li>
+<li>实现不一致项检测、证据定位、图片查重和文字防串标，真实标书样本检出率达到 98%。</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>基于大模型的智能作业批阅系统</h3><span>2024.11—2025.03</span></div>
+<p class="meta">读书郎教育科技有限公司横向课题，100 万 · 主要负责人</p>
+<ul>
+<li>牵头搭建端云协同大模型批阅平台，覆盖步骤批改、应用题、计算题和证明题等题型。</li>
+<li>复杂题型整体批改准确率超过 90%，成果实现产品化与商业化转化。</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>基于分布式边缘智能的合作视频监控</h3><span>2023.11—2024.07</span></div>
+<p class="meta">国家科技部重点研发项目，200 万 · 主要参与人</p>
+<ul>
+<li>主导多边缘视频分析架构设计，模块化集成检测、跟踪、特征提取和行人重识别。</li>
+<li>构建低时延通信链路与 Kafka 消息通道，系统平均通信时延 33 ms，测试环境重识别准确率 96%。</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>基于知识库的大模型智能政务问答助手</h3><span>2023.07—2024.05</span></div>
+<p class="meta">地方智慧城市子项目 · 主要负责人</p>
+<ul>
+<li>自动化抓取市县镇三级政务数据，构建政务外挂知识库。</li>
+<li>融合 LangChain 与大模型，设计多级字典匹配查询方法以提升结构化知识检索准确性。</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>脑全域神经表观基因组与远距离投射数据可视化</h3><span>2023.06—2023.08</span></div>
+<p class="meta">Nature 正刊相关项目 · 主要负责人</p>
+<ul>
+<li>使用 Dash 与 Plotly 构建多维神经科学数据可视化网站。</li>
+<li>实现 t-SNE、空间坐标、基因表达、甲基化表达及脑区关系的交互式展示。</li>
+</ul>
+</article>
+</section>
+<section id="publications">
+<h2>学术成果</h2>
+<ol class="publication-list"><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>，第一作者。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>，第一作者，<strong>Highlight，Top 3%</strong>。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI 一区 TOP</span>，第一作者。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI 一区 TOP</span>，第一作者。</li><li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI 一区 TOP</span>，作者排名 7/51。</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>。</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>。</li><li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>。</li><li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>。</li><li>Li B, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI 二区</span>。</li><li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. FedMePF: Memory-Adaptive Multi-Edge Federated Learning via Progressive Model Expansion and Dynamic Parameter Freezing. <em>Information Sciences</em>. <span class="rank">SCI 一区 TOP</span>。</li></ol>
+</section>
+<section id="patents">
+<h2>发明专利</h2>
+<ol class="patent-list">
+<li>一种基于多特征循环确认的在线行人重识别方法及其系统（学生第一，发明授权）</li>
+<li>一种答案范例的筛选方法、存储介质及相关装置（学生第一，发明授权）</li>
+<li>一种面向行人重识别场景的边缘协同推理交互方法（参与，发明授权）</li>
+<li>一种基于多智能体并行投票的作业自动评估方法及系统（学生第一，发明公开）</li>
+<li>一种基于智能分割与匈牙利算法的手写轨迹分析批改方法及系统（学生第一，发明公开）</li>
+<li>一种基于并行批次处理的长文本处理加速方法（学生第一，申请）</li>
+<li>一种基于知识库命中片段的动态上下文扩展式校验方法（学生第一，申请）</li>
+<li>一种基于分布式边缘协作的视频监控方法（参与，发明公开）</li>
+<li>一种基于主动采样的物联网数据高效收集方法（参与，发明公开）</li>
+<li>一种基于大型语言模型的纯文本作业自动批改方法（参与，发明公开）</li>
+<li>一种可切换多模态模型架构的图文融合作业批改方法及系统（参与，发明公开）</li>
+<li>图像类题目的参考答案生成方法、存储介质及系统（参与，发明公开）</li>
+<li>一种基于多模型协同的智能作业批改方法及系统（参与，发明公开）</li>
+<li>一种答案预生成方法、存储介质及系统（参与，发明公开）</li>
+<li>一种几何证明题作业智能化批改方法（参与，发明公开）</li>
+<li>群体作答的最优答案推荐方法、存储介质及装置（参与，发明公开）</li>
+<li>一种基于 K 轮偏移切片与稳定页码回对齐的长文档结构化抽取方法（参与，申请）</li>
+<li>一种基于事件语义优先级的云边协同视频监控动态调度方法（参与，申请）</li>
+</ol>
+</section>
+<section id="awards">
+<h2>荣誉获奖</h2>
+<ul>
+<li>广东省工业软件科学技术发明一等奖</li>
+<li>大数据云边智能协同教育部工程中心杰出贡献奖</li>
+<li>国家奖学金</li>
+<li>学业特等奖学金</li>
+<li>南昌大学优秀毕业生</li>
+<li>百度松果菁英班优秀学员</li>
+</ul>
+</section>
+</div>
+<div class="en">
+<section id="education-en">
+<h2>Education</h2>
+<div class="entry compact">
+<div class="entry-head"><strong>Ph.D. Student, Intelligent Science and Technology, Beijing Normal University</strong><span>Sep. 2024—Present</span></div>
+<p>Advisor: Prof. Tian Wang</p>
+</div>
+<div class="entry compact">
+<div class="entry-head"><strong>M.Eng. in Computer Technology, Nanchang University</strong><span>Sep. 2021—Jun. 2024</span></div>
+<p>Advisors: Prof. Hong Rao and Prof. Shengbo Chen</p>
+</div>
+</section>
+<section id="research-en">
+<h2>Research Interests</h2>
+<div class="entry">
+<h3>Federated Learning with Privacy Noise</h3>
+<p>Optimization and convergence analysis for federated learning under noisy privacy protection, with dynamically coordinated client and server learning rates.</p>
+</div>
+<div class="entry">
+<h3>Federated Generative Models under Data Heterogeneity</h3>
+<p>Distribution-aware correction methods for federated diffusion models, supported by empirical evaluation and convergence guarantees.</p>
+</div>
+<div class="entry">
+<h3>Parameter-Efficient Federated Foundation Models</h3>
+<p>LoRA-based efficient adaptation, heterogeneous low-rank aggregation, personalization, and theoretical guarantees in federated settings.</p>
+</div>
+</section>
+<section id="projects-en">
+<h2>Projects</h2>
+<article class="entry">
+<div class="entry-head"><h3>Multimodal Transportation Foundation Models for Real-World Applications</h3><span>Nov. 2025—Present</span></div>
+<p class="meta">Guangdong Key-Area R&amp;D Program, CNY 48M · Core Participant</p>
+<ul>
+<li>Contributed to the architecture and module design for intelligent driving and traffic-incident response.</li>
+<li>Designed cross-domain federated training and incremental fine-tuning with cloud–edge–device collaboration and local differential privacy.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>LLM-Based Intelligent Tender Document Audit</h3><span>Aug. 2025—Jan. 2026</span></div>
+<p class="meta">China Telecom Industry Project, CNY 0.96M · Project Lead</p>
+<ul>
+<li>Designed a Map-Reduce audit pipeline for long documents with multi-round sliding windows and hierarchical re-verification.</li>
+<li>Implemented inconsistency detection, evidence localization, image deduplication, and collusion-risk screening, reaching 98% recall on real tender documents.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>LLM-Based Intelligent Homework Grading</h3><span>Nov. 2024—Mar. 2025</span></div>
+<p class="meta">Readboy Education Industry Project, CNY 1M · Project Lead</p>
+<ul>
+<li>Led an edge–cloud grading platform covering step-aware scoring, word problems, calculations, and proofs.</li>
+<li>Achieved over 90% accuracy on complex question types and supported product deployment and commercialization.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>Distributed Edge-Intelligence Video Surveillance</h3><span>Nov. 2023—Jul. 2024</span></div>
+<p class="meta">National Key R&amp;D Project, CNY 2M · Core Participant</p>
+<ul>
+<li>Led the design of a modular multi-edge video analytics architecture integrating detection, tracking, feature extraction, and re-identification.</li>
+<li>Built low-latency communication and Kafka data channels, achieving 33 ms average communication latency and 96% re-identification accuracy in the test environment.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>Knowledge-Base-Augmented Government Question Answering</h3><span>Jul. 2023—May 2024</span></div>
+<p class="meta">Smart-City Subproject · Project Lead</p>
+<ul>
+<li>Automated the collection of municipal, county, and township government data and constructed an external knowledge base.</li>
+<li>Integrated LangChain with large language models and designed a multi-level dictionary matching method for structured retrieval.</li>
+</ul>
+</article>
+<article class="entry">
+<div class="entry-head"><h3>Visualization of Brain-Wide Epigenomics and Long-Distance Projections</h3><span>Jun. 2023—Aug. 2023</span></div>
+<p class="meta">Nature Research Project · Project Lead</p>
+<ul>
+<li>Built a Dash and Plotly website for multidimensional neuroscience data.</li>
+<li>Visualized t-SNE embeddings, spatial coordinates, gene and methylation expression, and brain-region relationships.</li>
+</ul>
+</article>
+</section>
+<section id="publications-en">
+<h2>Publications</h2>
+<ol class="publication-list"><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>. First author.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>. First author, <strong>Highlight, Top 3%</strong>.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI Q1 TOP</span>. First author.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI Q1 TOP</span>. First author.</li><li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI Q1 TOP</span>. Author 7/51.</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>.</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>.</li><li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>.</li><li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>.</li><li>Li B, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI Q2</span>.</li><li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. FedMePF: Memory-Adaptive Multi-Edge Federated Learning via Progressive Model Expansion and Dynamic Parameter Freezing. <em>Information Sciences</em>. <span class="rank">SCI Q1 TOP</span>.</li></ol>
+</section>
+<section id="patents-en">
+<h2>Patents</h2>
+<p>18 invention patent applications, including granted patents in online pedestrian re-identification, answer-example selection, and edge-collaborative inference, as well as applications covering automated grading, long-document processing, knowledge-base verification, and cloud–edge video scheduling.</p>
+</section>
+<section id="awards-en">
+<h2>Awards</h2>
+<ul>
+<li>First Prize, Guangdong Industrial Software Science and Technology Invention Award</li>
+<li>Outstanding Contribution Award, Engineering Research Center of Cloud–Edge Intelligent Collaboration, Ministry of Education</li>
+<li>National Scholarship</li>
+<li>First-Class Academic Scholarship</li>
+<li>Outstanding Graduate, Nanchang University</li>
+<li>Outstanding Student, Baidu Songguo Elite Program</li>
+</ul>
+</section>
+</div>
+<footer>
+<p>© <span id="year"></span> Zihao Peng · <a href="mailto:pzh_99@163.com">pzh_99@163.com</a></p>
+</footer>
+</main>
+</body>
+</html>
