@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8"/>
@@ -9,7 +8,21 @@
 <title>彭子豪 | Zihao Peng</title>
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="styles.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
+<script defer src="script.js"></script>
+<!-- News styles are scoped so the existing page design is preserved. -->
+<style>
+.resume .news-list { list-style: none; margin: 0; padding: 0; }
+.resume .news-list > li { display: grid; grid-template-columns: 6.25rem minmax(0, 1fr); gap: .25rem 1rem; align-items: baseline; margin: 0; padding: .55rem 0; line-height: 1.75; }
+.resume .news-list time { color: #6b7280; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.resume .news-list p { margin: 0; }
+.resume .news-list strong { color: #234e70; font-weight: 600; }
+.resume .honor-date { color: #6b7280; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 540px) {
+  .resume .news-list > li { grid-template-columns: 1fr; gap: .1rem; padding: .65rem 0; }
+  .resume .news-list time { font-size: .9em; }
+}
+@media print { .resume .news-list > li { break-inside: avoid; } }
+</style>
 </head>
 <body>
 <main class="resume">
@@ -32,6 +45,7 @@
 </header>
 <div aria-label="Page controls" class="toolbar">
 <nav>
+<a class="zh" href="#news">最新动态</a><a class="en" href="#news-en">News</a>
 <a class="zh" href="#education">教育背景</a><a class="en" href="#education-en">Education</a>
 <a class="zh" href="#research">研究方向</a><a class="en" href="#research-en">Research</a>
 <a class="zh" href="#projects">项目经历</a><a class="en" href="#projects-en">Projects</a>
@@ -42,6 +56,14 @@
 <button aria-label="Switch language" id="lang-toggle" type="button">EN</button>
 </div>
 <div class="zh">
+<section id="news" aria-labelledby="news-title">
+<h2 id="news-title">最新动态</h2>
+<ul class="news-list">
+<!-- CAST news is dated by the homepage update month; replace when the selection month is confirmed. -->
+<li><time datetime="2026-11">2026.11</time><p>入选<strong>中国科协青年科技人才培育工程博士生专项计划</strong>。</p></li>
+<li><time datetime="2026-10">2026.10</time><p>荣获<strong>博士研究生国家奖学金</strong>。</p></li>
+</ul>
+</section>
 <section id="education">
 <h2>教育背景</h2>
 <div class="entry compact">
@@ -122,7 +144,19 @@
 </section>
 <section id="publications">
 <h2>学术成果</h2>
-<ol class="publication-list"><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>，第一作者。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>，第一作者，<strong>Highlight，Top 3%</strong>。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI 一区 TOP</span>，第一作者。</li><li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI 一区 TOP</span>，第一作者。</li><li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI 一区 TOP</span>，作者排名 7/51。</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>。</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>。</li><li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>。</li><li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>。</li><li>Li B, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI 二区</span>。</li><li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Synergy of UAV Collaboration and Progressive Training for Robust Federated Learning in Air-Ground Multi-Edge Systems. <em>Information Sciences</em>. <span class="rank">SCI 一区 TOP</span>。</li></ol>
+<ol class="publication-list">
+<li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>，第一作者。</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>，第一作者，<strong>Highlight，Top 3%</strong>。</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI 一区 TOP</span>，第一作者。</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI 一区 TOP</span>，第一作者。</li>
+<li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI 一区 TOP</span>，作者排名 7/51。</li>
+<li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>。</li>
+<li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>。</li>
+<li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>。</li>
+<li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>。</li>
+<li>Li B, <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI 二区</span>。</li>
+<li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">（彭子豪）</span></strong>, et al. Synergy of UAV Collaboration and Progressive Training for Robust Federated Learning in Air-Ground Multi-Edge Systems. <em>Information Sciences</em>. <span class="rank">SCI 一区 TOP</span>。</li>
+</ol>
 </section>
 <section id="patents">
 <h2>发明专利</h2>
@@ -150,9 +184,10 @@
 <section id="awards">
 <h2>荣誉获奖</h2>
 <ul>
+<li>中国科协青年科技人才培育工程博士生专项计划（入选）</li>
+<li>博士研究生国家奖学金 <time class="honor-date" datetime="2026-10">（2026.10）</time></li>
 <li>广东省工业软件科学技术发明一等奖</li>
 <li>大数据云边智能协同教育部工程中心杰出贡献奖</li>
-<li>国家奖学金</li>
 <li>学业特等奖学金</li>
 <li>南昌大学优秀毕业生</li>
 <li>百度松果菁英班优秀学员</li>
@@ -160,6 +195,14 @@
 </section>
 </div>
 <div class="en">
+<section id="news-en" aria-labelledby="news-title-en">
+<h2 id="news-title-en">News</h2>
+<ul class="news-list">
+<!-- English rendering of the Chinese program title; not an official English title. -->
+<li><time datetime="2026-11">Nov. 2026</time><p>Selected for the <strong>China Association for Science and Technology (CAST) Young Scientific Talent Development Program — Doctoral Student Track</strong>.</p></li>
+<li><time datetime="2026-10">Oct. 2026</time><p>Received the <strong>National Scholarship for Doctoral Students</strong>.</p></li>
+</ul>
+</section>
 <section id="education-en">
 <h2>Education</h2>
 <div class="entry compact">
@@ -240,7 +283,19 @@
 </section>
 <section id="publications-en">
 <h2>Publications</h2>
-<ol class="publication-list"><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>. First author.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>. First author, <strong>Highlight, Top 3%</strong>.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI Q1 TOP</span>. First author.</li><li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI Q1 TOP</span>. First author.</li><li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI Q1 TOP</span>. Author 7/51.</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>.</li><li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>.</li><li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>.</li><li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>.</li><li>Li B, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI Q2</span>.</li><li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Synergy of UAV Collaboration and Progressive Training for Robust Federated Learning in Air-Ground Multi-Edge Systems. <em>Information Sciences</em>. <span class="rank">SCI Q1 TOP</span>.</li></ol>
+<ol class="publication-list">
+<li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. Dynamic Grouping and Aggregation Weight Optimization for Hierarchical Federated Learning with Quantization. <em>IEEE Transactions on Networking</em>, 2026. <span class="rank">CCF-A</span>. First author.</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Zou N, Zeng J, et al. HiLoRA: Hierarchical Low-Rank Adaptation for Personalized Federated Learning. <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026. <span class="rank">CCF-A</span>. First author, <strong>Highlight, Top 3%</strong>.</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li B, Li L, et al. Performance Optimization for Noise Interference Privacy Protection in Federated Learning. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2023. <span class="rank">SCI Q1 TOP</span>. First author.</li>
+<li><strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Wang X, Chen S, et al. Federated Learning for Diffusion Models. <em>IEEE Transactions on Cognitive Communications and Networking</em>, 2025. <span class="rank">SCI Q1 TOP</span>. First author.</li>
+<li>Zhou J, Zhang Z, Wu M, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Brain-wide Correspondence of Neuronal Epigenomics and Distant Projections. <em>Nature</em>, 2023. <span class="rank">SCI Q1 TOP</span>. Author 7/51.</li>
+<li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. E2EC: Edge-to-Edge Collaboration for Efficient Real-Time Video Surveillance Inference. <em>IEEE Transactions on Mobile Computing</em>, 2025. <span class="rank">CCF-A</span>.</li>
+<li>Li G, Zeng J, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Zero-Shot Real-Time Pedestrian Re-Identification Services via Edge-to-Edge Cooperation. <em>IEEE Transactions on Services Computing</em>, 2026. <span class="rank">CCF-A</span>.</li>
+<li>Chen K, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning. <em>The ACM Web Conference (WWW)</em>, 2026. <span class="rank">CCF-A</span>.</li>
+<li>Li G, Zeng J, Li Y, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. MemoVAD: Resource-Efficient Video Anomaly Detection via Dynamic Semantic Memory in Edge Computing Scenarios. <em>International Joint Conference on Artificial Intelligence (IJCAI)</em>, 2026. <span class="rank">CCF-B</span>.</li>
+<li>Li B, <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, Li Y, et al. Neighborhood and Global Perturbations Supported SAM in Federated Learning: From Local Tweaks to Global Awareness. <em>IEEE Transactions on Network Science and Engineering</em>, 2025. <span class="rank">SCI Q2</span>.</li>
+<li>Zhang H, … <strong class="self-author">Peng Z <span class="author-cn">(彭子豪)</span></strong>, et al. Synergy of UAV Collaboration and Progressive Training for Robust Federated Learning in Air-Ground Multi-Edge Systems. <em>Information Sciences</em>. <span class="rank">SCI Q1 TOP</span>.</li>
+</ol>
 </section>
 <section id="patents-en">
 <h2>Patents</h2>
@@ -249,9 +304,10 @@
 <section id="awards-en">
 <h2>Awards</h2>
 <ul>
+<li>Selected for the CAST Young Scientific Talent Development Program — Doctoral Student Track</li>
+<li>National Scholarship for Doctoral Students <time class="honor-date" datetime="2026-10">(Oct. 2026)</time></li>
 <li>First Prize, Guangdong Industrial Software Science and Technology Invention Award</li>
 <li>Outstanding Contribution Award, Engineering Research Center of Cloud–Edge Intelligent Collaboration, Ministry of Education</li>
-<li>National Scholarship</li>
 <li>First-Class Academic Scholarship</li>
 <li>Outstanding Graduate, Nanchang University</li>
 <li>Outstanding Student, Baidu Songguo Elite Program</li>
